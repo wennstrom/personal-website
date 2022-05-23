@@ -1,7 +1,11 @@
 import React from 'react';
+import '../bootstrap';
+import ReactDOM from 'react-dom/client';
 
 const Home = () => {
-    return <span>Hello</span>;
+    return <span></span>;
   };
 
-export default Home;
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Home />);

@@ -1,23 +1,17 @@
-<!DOCTYPE html>
- <html>
-     <head>
-         <meta charset="UTF-8">
-         <title>{% block title %}Oskar Wennström{% endblock %}</title>
-         {% block stylesheets %}{% endblock %}
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-     </head>
-     <body>
+{% extends "base.html.twig" %}
+
+         {% block title %}- Home{% endblock %}
+         
+         {% block javascripts %}
+         
+         <!-- Include the compiled script-->
+            {{ encore_entry_script_tags('home') }}
+             
+         {% endblock %}      
+
          {% block body %}
                  <div id="root">
                  
                  </div>
-
          {% endblock %}
-          {% block javascripts %}
          
-         <!-- Include the compiled script-->
-            {{ encore_entry_script_tags('app') }}
-             
-         {% endblock %}
-     </body>
- </html>
